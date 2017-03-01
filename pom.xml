@@ -25,7 +25,8 @@
         <developerConnection>scm:git:git@github.com:${github.account}/addressbook.git</developerConnection>
         <url>scm:git:git@github.com:${github.account}/addressbook.git</url>
     </scm>
-    <pluginRepositories>
+
+  <pluginRepositories>
         <pluginRepository>
             <id>vaadin-snapshots</id>
             <url>http://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
@@ -59,9 +60,7 @@
         </snapshots>
     </pluginRepository>
     </pluginRepositories>
-
-
-	
+ 
 <build>
         <plugins>
            <plugin>
@@ -69,7 +68,7 @@
 	<artifactId>tomcat7-maven-plugin</artifactId>
 	<version>2.2</version>
 	<configuration>
-		<url>http://52.172.202.99:8080/manager/text</url>
+		<url>http://52.172.201.68:8080/manager/text</url>
 		<server>tomcat7server</server>
 		<path>/addressbook</path>
 		<update>true</update>
@@ -78,9 +77,8 @@
 </plugins>
 </build> 
 
+
  <modules>
         <module>addressbook_main</module>
     </modules>
-
-
 </project>
