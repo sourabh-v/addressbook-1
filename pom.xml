@@ -25,8 +25,12 @@
         <developerConnection>scm:git:git@github.com:${github.account}/addressbook.git</developerConnection>
         <url>scm:git:git@github.com:${github.account}/addressbook.git</url>
     </scm>
+<<<<<<< HEAD
 
   <pluginRepositories>
+=======
+    <pluginRepositories>
+>>>>>>> 25b6f939dbcfb6b1f4fde2264d3a40f6d7705b1d
         <pluginRepository>
             <id>vaadin-snapshots</id>
             <url>http://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
@@ -60,6 +64,7 @@
         </snapshots>
     </pluginRepository>
     </pluginRepositories>
+<<<<<<< HEAD
  
 <build>
         <plugins>
@@ -78,7 +83,14 @@
 </build> 
 
 
+=======
+
+
+	
+>>>>>>> 25b6f939dbcfb6b1f4fde2264d3a40f6d7705b1d
  <modules>
         <module>addressbook_main</module>
     </modules>
+
+
 </project>
