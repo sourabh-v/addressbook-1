@@ -27,7 +27,6 @@
     </scm>
 
   <pluginRepositories>
-    <pluginRepositories>
         <pluginRepository>
             <id>vaadin-snapshots</id>
             <url>http://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
