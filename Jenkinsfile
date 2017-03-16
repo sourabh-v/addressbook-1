@@ -47,5 +47,8 @@ node {
 stage('Publish Reports') {
 junit allowEmptyResults: true, testResults: '/demo/addressbook/addressbook_main/target/surefire-reports'
 }
+stage('Publish Publish') {
+publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'addressbook_main/target/site/cobertura/', reportFiles: 'index.html', reportName: 'HTML Report'])publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'addressbook_main/target/site/cobertura/', reportFiles: 'index.html', reportName: 'HTML Report'])
+}
 
 }
