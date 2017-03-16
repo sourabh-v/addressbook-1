@@ -22,7 +22,7 @@ node {
    stage('COVERAGE') {
       // Run the maven build
       if (isUnix()) {
-         sh "'${mvnHome}/bin/mvn' -pmd:pmd"
+         sh "'${mvnHome}/bin/mvn' pmd:pmd"
       } else {
          bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
       }
@@ -31,7 +31,7 @@ node {
    stage('REVIEW') {
       // Run the maven build
       if (isUnix()) {
-         sh "'${mvnHome}/bin/mvn' -cobertura:cobertura"
+         sh "'${mvnHome}/bin/mvn' cobertura:cobertura"
       } else {
          bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
       }
