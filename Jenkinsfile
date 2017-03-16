@@ -44,4 +44,8 @@ node {
    stage('Publish') {
      nexusPublisher nexusInstanceId: 'NEXUS', nexusRepositoryId: 'RELEASES', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'addressbook_main/target/addressbook.war']], mavenCoordinate: [artifactId: 'addressbook_main', groupId: 'com.edurekademo.tutorial', packaging: 'war', version: '2.3.0']]]
    }
+stage('Publish Reports') {
+junit allowEmptyResults: true, testResults: '/demo/addressbook/addressbook_main/target/surefire-reports'
+}
+
 }
