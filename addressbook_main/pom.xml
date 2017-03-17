@@ -25,11 +25,6 @@
     <id>RELEASES</id>
     <url>http://52.172.206.161:8080/nexus/content/repositories/RELEASES</url>
   </repository>
-</distributionManagement><distributionManagement>
-  <repository>
-    <id>RELEASES</id>
-    <url>http://52.172.206.161:8080/nexus/content/repositories/RELEASES</url>
-  </repository>
 </distributionManagement>
 	
     <repositories>
