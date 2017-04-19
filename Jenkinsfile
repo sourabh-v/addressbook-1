@@ -7,7 +7,7 @@ node {
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
       // **       in the global configuration.           
-      mvnHome = tool 'LOCAL_MAVEN'
+      mvnHome = tool 'MAVEN_HOME'
       version='2.3.5'
    }
    stage('UNITTEST') {
